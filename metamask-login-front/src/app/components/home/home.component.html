@@ -1,0 +1,7 @@
+<h1>Metamask Login</h1>
+
+<button type="button" (click)="mmService.signIn()" *ngIf="mmService.isMetamaskInstalled()">Sign-in with Metamask</button>
+
+<div *ngIf="user">
+    {{user | json}}
+</div>
